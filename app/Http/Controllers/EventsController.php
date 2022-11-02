@@ -14,7 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
+        $data = array('title' => 'Form Events');
+        return view('events.index', $data);
     }
 
     /**

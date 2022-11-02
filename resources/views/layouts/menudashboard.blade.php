@@ -10,6 +10,14 @@
         </p>
       </a>
     </li>
+    <li class="nav-item">
+      <a href="{{ route('events')}}" class="nav-link">
+        <i class="nav-icon fas fa-calendar-alt"></i>
+        <p>
+          Events
+        </p>
+      </a>
+    </li>
     <li class="nav-item has-treeview">
       <a href="#" class="nav-link">
         <i class="nav-icon fas fa-folder-open"></i>

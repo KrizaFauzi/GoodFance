@@ -18,6 +18,7 @@ use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\CartDetailController;
 use App\Http\Controllers\ProdukPromoController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EventsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,7 @@ Route::get('/all', [\App\Http\Controllers\HomepageController::class,'allProduk']
 
 Route::group(['prefix' => 'admin','middleware'=>'auth'], function() {
     Route::get('/', [\App\Http\Controllers\DashboardController::class,'index']);
+    Route::get('events', [\App\Http\Controllers\EventsController::class,'index'])->name('events');
     Route::get('profil', [\App\Http\Controllers\UserController::class,'index']);
     Route::get('setting', [\App\Http\Controllers\UserController::class,'setting']);
     Route::get('laporan', [\App\Http\Controllers\LaporanController::class,'index']);
